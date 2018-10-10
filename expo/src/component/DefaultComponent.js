@@ -27,7 +27,7 @@ export class MyButton extends Component {
             <TouchableOpacity
                 {...this.props}
                 style={[styles.button, this.props.style]}>
-                {...this.props.children}
+                {this.props.children}
             </ TouchableOpacity>
         );
     }
