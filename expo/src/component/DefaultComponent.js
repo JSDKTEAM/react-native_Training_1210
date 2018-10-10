@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
+import PropTypes from 'prop-types'
+
 
 export class MyText extends Component {
     constructor(props) {
@@ -29,7 +31,9 @@ export class MyButton extends Component {
             </ TouchableOpacity>
         );
     }
+    
 }
+
 
 
 const styles = {
