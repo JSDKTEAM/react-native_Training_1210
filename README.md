@@ -28,4 +28,29 @@
     - redux
     - react-redux
     - react-redux-thunk
+
+# Performance improve
+ - purecomponent or shoundComponent
+
+ shouldComponentUpdate(nextProps, nextState) {
+    if(this.props.firstProp === nextProps. firstProp &&
+       this.props.secondProp === nextProps.secondProp) {
+      return false;
+    }
+    return true
+  }
+  shouldComponentUpdate(nextProps, nextState) {
+    if(this.state.isLoading === nextState. isLoading) {
+      return false;
+    }
+    return true
+  }
+
+  - FlatList , SectionList use key
+    <FlatList
+        data={[{key: 'a'}, {key: 'b'}]}
+        keyExtractor={(item, index) => item.id}
+        renderItem={({item}) => <Text>{item.key}}
+    />
+
   
