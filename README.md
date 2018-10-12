@@ -4,6 +4,10 @@
   - Expo Cli
   - React-native
   - Redux
+
+# How to install
+  - clone to your directory then npm install
+  
  
 # Topic
   - Introduce React , Expo
@@ -18,4 +22,10 @@
   - Responsive Pixel Perfact
   - Etc ..
   
+
+ # Lib
+    - react-navigation
+    - redux
+    - react-redux
+    - react-redux-thunk
   

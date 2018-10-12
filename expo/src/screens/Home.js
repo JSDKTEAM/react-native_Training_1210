@@ -15,11 +15,11 @@ export default class Home extends React.Component {
     return (
       <View style={styles.container}>
         <Image source={{ uri: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" }} resizeMode={'contain'} style={image}></Image>
-        <MyText>Open up App.js to start working on your app!</MyText>
+        <MyText>Home</MyText>
         <View style={{ height: 20 }} />
         <MyButton
-          onPress={() => { alert("Hello") }}>
-          <MyText>Submit</MyText>
+          onPress={() => { this.props.navigation.pop() }}>
+          <MyText>Go Back</MyText>
         </MyButton>
         
         {/* <TextInput style={{ borderColor: 'lawngreen', padding: 5, borderWidth: 1 }} placeholder={'พิมพ์อะไรสักอย่างสิ'} placeholderTextColor={'lawngreen'} /> */}

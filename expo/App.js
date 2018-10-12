@@ -1,29 +1,38 @@
 import React, { Component } from 'react';
 import { createStackNavigator, createSwitchNavigator } from 'react-navigation';
+import { Provider } from "react-redux";
+import store from './src/redux/configureStore'
 import Home from './src/screens/Home';
+import Login from './src/screens/Login';
+
+
 
 console.disableYellowBox = true;
 
 const ScreenStackNavigator = createStackNavigator({
-  Home:Home,
+  Login: Login,
+  Home: Home,
+
 },
-{
-  headerMode: "none",
-  initialRouteName: "Home",
-});
+  {
+    headerMode: "none",
+    initialRouteName: "Login",
+  });
 
 const AppStackNavigator = createStackNavigator({
   MainPage: ScreenStackNavigator
-}, { 
-  mode: 'modal', 
-  headerMode: 'none',
-});
+}, {
+    mode: 'modal',
+    headerMode: 'none',
+  });
 
 
 class App extends Component {
   render() {
     return (
-      <AppStackNavigator/>
+      <Provider store={store}>
+        <AppStackNavigator />
+      </Provider>
     );
   }
 }
