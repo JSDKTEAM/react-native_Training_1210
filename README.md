@@ -27,7 +27,7 @@
     - npm install --save react-navigation
     - npm install --save redux
     - npm install --save react-redux
-    - npm install --save react-redux-thunk
+    - npm install --save redux-thunk
 
 # Performance improve
  - purecomponent or shoundComponent
