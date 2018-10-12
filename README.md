@@ -24,10 +24,10 @@
   
 
  # Lib
-    - react-navigation
-    - redux
-    - react-redux
-    - react-redux-thunk
+    - npm install --save react-navigation
+    - npm install --save redux
+    - npm install --save react-redux
+    - npm install --save react-redux-thunk
 
 # Performance improve
  - purecomponent or shoundComponent
